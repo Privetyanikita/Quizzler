@@ -53,7 +53,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="ansverQusTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dIg-N4-Sgq"/>
+                                                            <action selector="answerQusTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dIg-N4-Sgq"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -87,7 +87,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="ansverQusTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cY2-c5-W3h"/>
+                                                            <action selector="answerQusTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cY2-c5-W3h"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
