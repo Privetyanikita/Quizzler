@@ -39,6 +39,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        trueButton.layer.cornerRadius = 20
+        falseButton.layer.cornerRadius = 20
         updateUI()
     }
     @IBAction func answerQusTupped(_ sender: UIButton) {
@@ -71,7 +73,7 @@ class ViewController: UIViewController {
         }
         else{
             questionLabel.text = quiz[questionNumber].text
-            progressView.progress = Float(questionNumber) / Float(quiz.count)
+            progressView.progress = Float(questionNumber + 1) / Float(quiz.count)
         }
         updateButton()
     }
