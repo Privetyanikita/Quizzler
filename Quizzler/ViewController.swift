@@ -17,9 +17,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var falseButton: UIButton!
     
-    var timer = Timer()
-    
-    
     let quiz = [
         Question(q: "A slug's blood is green.", a: "True"),
         Question(q: "Approximately one quarter of human bones are in the feet.", a: "True"),
@@ -35,7 +32,6 @@ class ViewController: UIViewController {
         Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")]
     
     var questionNumber = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,8 +57,8 @@ class ViewController: UIViewController {
         else{
             questionNumber += 1
         }
-        timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: true)
+        
+        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: true)
         
     }
     
